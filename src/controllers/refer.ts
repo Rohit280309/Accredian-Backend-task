@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { AuthRequest } from "../middleware/authMiddleware";
 import prisma from "../config/prisma";
-import { sendMail } from "../../services/email.service";
+import { sendMail } from "../services/email.service";
 
 export const ReferHandler = async (req: AuthRequest, res: Response) => {
   try {
